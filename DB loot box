@@ -12,6 +12,7 @@ rate {
 	rate_id int pk
 	rate_name text
 	rate_color text
+	rate_value numeric(0,2)
 }
 
 item {
@@ -19,5 +20,7 @@ item {
 	item_name text
 	item_category integer > category.category_id
 	item_rate integer > rate.rate_id
+	item_url text
 }
+
 
