@@ -1,0 +1,23 @@
+
+table_1733306350 {
+	d integer
+}
+
+category {
+	category_name text
+	category_id int pk
+}
+
+rate {
+	rate_id int pk
+	rate_name text
+	rate_color text
+}
+
+item {
+	item_id int pk
+	item_name text
+	item_category integer > category.category_id
+	item_rate integer > rate.rate_id
+}
+
